@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #191919;
+    color: #e9e9e9;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    @media (min-width: 1400px) {width: 1320px;}
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.blue_span {
+    color: #0047AB;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*HEADER*/
+.header {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #191919;
+}
+
+.in_header {
+    display: flex;
+}
+
+.header_logo {
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    font-family: "Montserrat Alternates", "Montserrat", sans-serif;
+}
+
+.header::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #0047AB;
+    margin: 20px auto 0;
+}
+
+/*INTRO*/
+.intro {
+    width: 100%;
+    height: 100vh;
+    background: url(../images/eating.gif) center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro_overlay {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.in_intro {
+    width: 100%;
+    margin: 30px auto 0;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.intro_title {
+    color: white;
+}
+
+.intro_button {
+    display: inline-block;
+    vertical-align: top;
+    border: 2px solid #0047AB;
+    border-radius: 20px;
+    padding: 12px 40px;
+    font-size: 28px;
+    margin: 10px auto 0;
+    color: #e9e9e9;
+    transition: .1s;
+}
+
+.intro_button:hover {
+    background-color: #0047AB;
+    color: #fff;
+}
+
+/*SECTION*/
+.section {
+    padding: 80px 0;
+}
+
+.section_title {
+    color: #fff;
+    margin: 0 auto 80px;
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.section#eat {
+    background: url(../images/xui.jpg) center no-repeat;
+    background-size: cover;
+    padding: 0 0;
+}
+
+.section_overlay {
+    background-color: rgba(0, 0, 0, .6);
+    padding: 80px 0;
+    
+}
+
+/*OTHER DONATES*/
+.section_itemlist {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 60%;
+}
+
+#tinkoff {
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    max-width: 300px;
+    width: 100%;
+    max-height: 180px;
+    height: 100%;
+    padding: 20px 20px;
+}
+
+#sber {
+    background-color: green;
+    border: 1px solid green;
+    border-radius: 10px;
+    max-width: 300px;
+    width: 100%;
+    max-height: 180px;
+    height: 100%;
+    padding: 20px 20px;
+}
+
+.bankname {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 auto;
+}
+
+.cardnumber {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 20px auto ;
+}
+
+/*CARDS*/
+.cards {
+    display: block;
+    align-items: center;
+}
+
+.itemcard {
+    width: 70%;
+    background-color: #191919;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    padding: 20px 40px;
+    font-size: 18px;
+}
